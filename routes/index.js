@@ -10,4 +10,8 @@ router.get('/cv', function(req, res, next) {
   res.render('CV');
 });
 
+router.get('/firstOSC', function(req, res, next) {
+  res.render('firstOSC');
+});
+
 module.exports = router;
