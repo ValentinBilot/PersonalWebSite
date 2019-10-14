@@ -1,7 +1,3 @@
-body
-{
-	background: url("images/fond.jpg") no-repeat;
-}
 
 header
 {
@@ -9,7 +5,9 @@ header
 }
 
 
-
+h3{
+    background: aqua;
+}
 
 .column h1
 {
@@ -24,6 +22,7 @@ header
 
 #identity
 {
+    margin-top: 2%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +155,7 @@ footer
     {
         font-size: 0.9em;
     }
-    h1
+    h3
     {
         font-size: 1.3em;
     }
