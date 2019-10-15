@@ -26,6 +26,14 @@ router.get('/music', function(req, res, next) {
   res.render('music');
 });
 
+router.get('/projects', function(req, res, next) {
+  res.render('projects');
+});
+
+router.get('/bio', function(req, res, next) {
+  res.render('bio');
+});
+
 
 
 router.get('/firstOSC', function(req, res, next) {
