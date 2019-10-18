@@ -2,13 +2,13 @@ header {
   margin-bottom: 3%; }
 
 h3 {
-  background: #418a86;
+  background: #71aaa6;
   border-radius: 10px;
   padding: 4px;
   max-width: 150px; }
 
 .column h1 {
-  color: #b7b8ff; }
+  color: #c7c8ff; }
 
 .intro #name {
   text-align: center;
@@ -44,8 +44,8 @@ h3 {
   display: flex;
   flex-direction: column;
   min-width: 200px;
-  max-width: 20%;
-  background: #b7b8ff;
+  max-width: 90%;
+  background: #c7c8ff;
   margin: 1%;
   padding: 1%;
   border-radius: 10px; }
@@ -104,12 +104,17 @@ footer {
     margin-bottom: 0px; }
 
   p, li {
-    font-size: 0.9em; }
+    font-size: 1.0em; }
 
   h3 {
-    font-size: 1.3em; }
+    font-size: 1.5em; }
 
   footer {
     font-size: 0.5em; } }
+h3 {
+  box-shadow: 3px 5px 4px #888888; }
+
+.column {
+  box-shadow: 5px 10px 8px #888888; }
 
 /*# sourceMappingURL=styleCV.css.map */
