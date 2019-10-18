@@ -1,164 +1,115 @@
+header {
+  margin-bottom: 3%; }
 
-header
-{
-    margin-bottom: 3%;
-}
+h3 {
+  background: #418a86;
+  border-radius: 10px;
+  padding: 4px;
+  max-width: 150px; }
 
+.column h1 {
+  color: #b7b8ff; }
 
-h3{
-    background: aqua;
-    border-radius:10px;
-    max-width: 150px;
+.intro #name {
+  text-align: center;
+  margin: auto; }
 
-}
+#identity {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.column h1
-{
-	color:maroon;
-}
+#photo {
+  float: right;
+  margin-top: 2%;
+  margin-right: 1%; }
 
-.intro #name
-{
-	text-align: center;
-    margin:auto;
-}
+#main {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  padding: 1%; }
 
-#identity
-{
-    margin-top: 2%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
+#maintext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; }
 
-#photo
-{
-	float:right;
-    margin-top: 2%;
-    margin-right: 1%;
-}
+#main:nth-child(1) {
+  width: 15%; }
 
-#main
-{
+.column {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 20%;
+  background: #b7b8ff;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 10px; }
+
+aside h1 {
+  font-family: 'cac_champagneregular', Arial, serif;
+  font-size: 1.2em; }
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("images/aside.jpg");
+  min-width: 200px; }
+
+footer {
+  margin-top: 2%;
+  text-align: right; }
+
+.ombretext {
+  text-shadow: 1px 1px 2px orange; }
+
+@media screen and (max-width: 1024px) {
+  aside {
+    display: none; }
+
+  #maintext {
+    flex-direction: column; }
+
+  .column h1 {
+    color: blue; }
+
+  .column, #maintext, #main {
+    width: 100%;
+    max-width: none; }
+
+  #competences {
     display: flex;
     flex-direction: row;
-    margin: 1%;
-    padding: 1%;
+    align-items: flex-start;
+    justify-content: space-around; }
 
-}
-
-#maintext
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width:100%;
-}
-
-#main:nth-child(1)
-{
-    width:15%;
-}
-
-.column
-{
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    max-width: 20%;
-    background: silver;
-    margin:1%;
-    padding: 1%;
-    border-radius:10px;
-}
-
-
-
-
-
-
-aside h1
-{
-    font-family: 'cac_champagneregular', Arial, serif;
-    font-size: 1.2em;   
-}
-
-aside
-{
+  #experiences {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background : url("images/aside.jpg");
-    min-width: 200px;
-}
+    justify-content: space-around; }
 
-footer
-{
-    margin-top: 2%;
-    text-align: right;
-}
+  #education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around; }
 
-.ombretext
-{
-	text-shadow: 1px 1px 2px orange;
-}
+  header {
+    margin-bottom: 0px; }
 
-@media screen and (max-width: 1024px)
-{
-    aside
-    {
-        display:none;
-    }
-    #maintext
-    {
-        flex-direction: column;
+  p, li {
+    font-size: 0.9em; }
 
-    }
-    .column h1
-    {
-        color:blue;
-    }
-    .column, #maintext, #main
-    {
-        width:100%;
-        max-width: none;
-    }
-    #competences
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
-    #experiences
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
-    #education
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
-    header
-    {
-        margin-bottom: 0px;
-    }
-    p, li
-    {
-        font-size: 0.9em;
-    }
-    h3
-    {
-        font-size: 1.3em;
-    }
-    footer
-    {
-        font-size: 0.5em;
-    }
+  h3 {
+    font-size: 1.3em; }
 
-}
+  footer {
+    font-size: 0.5em; } }
+
+/*# sourceMappingURL=styleCV.css.map */

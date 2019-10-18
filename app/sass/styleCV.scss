@@ -1,0 +1,169 @@
+
+$color0: #356461;
+$color1: #418a86;
+$color2: #b7b8ff;
+
+header
+{
+    margin-bottom: 3%;
+}
+
+
+h3{
+    background: $color1;
+    border-radius:10px;
+    padding:4px;
+    max-width: 150px;
+
+}
+
+.column h1
+{
+	color:$color2;
+}
+
+.intro #name
+{
+	text-align: center;
+    margin:auto;
+}
+
+#identity
+{
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo
+{
+	float:right;
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    padding: 1%;
+
+}
+
+#maintext
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+}
+
+#main:nth-child(1)
+{
+    width:15%;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 20%;
+    background: $color2;
+    margin:1%;
+    padding: 1%;
+    border-radius:10px;
+}
+
+
+
+
+
+
+aside h1
+{
+    font-family: 'cac_champagneregular', Arial, serif;
+    font-size: 1.2em;   
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background : url("images/aside.jpg");
+    min-width: 200px;
+}
+
+footer
+{
+    margin-top: 2%;
+    text-align: right;
+}
+
+.ombretext
+{
+	text-shadow: 1px 1px 2px orange;
+}
+
+@media screen and (max-width: 1024px)
+{
+    aside
+    {
+        display:none;
+    }
+    #maintext
+    {
+        flex-direction: column;
+
+    }
+    .column h1
+    {
+        color:blue;
+    }
+    .column, #maintext, #main
+    {
+        width:100%;
+        max-width: none;
+    }
+    #competences
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #experiences
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #education
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    header
+    {
+        margin-bottom: 0px;
+    }
+    p, li
+    {
+        font-size: 0.9em;
+    }
+    h3
+    {
+        font-size: 1.3em;
+    }
+    footer
+    {
+        font-size: 0.5em;
+    }
+
+}
