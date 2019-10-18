@@ -68,7 +68,7 @@ footer {
 .ombretext {
   text-shadow: 1px 1px 2px orange; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   aside {
     display: none; }
 
