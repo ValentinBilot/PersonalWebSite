@@ -8,7 +8,7 @@ h3 {
   max-width: 150px; }
 
 .column h1 {
-  color: #c7c8ff; }
+  color: #d7d8ff; }
 
 .intro #name {
   text-align: center;
@@ -28,7 +28,8 @@ h3 {
 #main {
   display: flex;
   flex-direction: row;
-  margin: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 1%; }
 
 #maintext {
@@ -45,10 +46,11 @@ h3 {
   flex-direction: column;
   min-width: 250px;
   max-width: 70%;
-  background: #c7c8ff;
-  margin: 1%;
+  background: #d7d8ff;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 1%;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 aside h1 {
   font-family: 'cac_champagneregular', Arial, serif;
