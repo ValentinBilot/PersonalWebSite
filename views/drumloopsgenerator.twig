@@ -6,8 +6,24 @@
     <h1>Drum loops generator Project</h1>
     <a href="https://github.com/ValentinBilot/DrumLoopsGenerator"> Github link </a>
     </br>
+    <h2>Intro</h2>
+    <p>This project firstly was done in order to create one
+       Variational Auto Encoder able to encode and generate drum sounds
+       like snares, bass drums, hit hats, tambourines... and to generate
+       sounds between distinct elements, like something between a snare and
+       a bass drum. Which we could imagine sound like a
+       "big bass snare drum", maybe :)
+     </p>
     <h2>Global schema of the first Variational Auto-Encoder:</h2>
-    <img src="images/drum_loops_global_sheme.png" style="max-width:500px;">
+    <img src="images/drum_loops_global_sheme.png" style="max-width:500px; margin:50px;">
+    <h2>Sequences of 3d points</h2>
+    <p>The intersting thing now, is that we have a way to reduce a drum
+    sound, which is something a bit complicated, into a single 3d point,
+    which is much simpler. </p>
+    <p>Thus, building a network able to understand the structure of
+    a sequence of 3d points was the idea that followed logicaly.</p>
+
+
     </div>
 
 {% endblock %}
