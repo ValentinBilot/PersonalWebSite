@@ -11,7 +11,7 @@
        Variational Auto Encoder able to encode and generate drum sounds
        like snares, bass drums, hit hats, tambourines... and to generate
        sounds between distinct elements, like something between a snare and
-       a bass drum. Which we could imagine sound like a
+       a bass drum. Which we could imagine sounds like a
        "big bass snare drum", maybe :)
      </p>
     <h2>Global schema of the first Variational Auto-Encoder:</h2>
@@ -19,9 +19,33 @@
     <h2>Sequences of 3d points</h2>
     <p>The intersting thing now, is that we have a way to reduce a drum
     sound, which is something a bit complicated, into a single 3d point,
-    which is much simpler. </p>
-    <p>Thus, building a network able to understand the structure of
-    a sequence of 3d points was the idea that followed logicaly.</p>
+    which is much simpler.
+    Thus, building a network able to understand the structure of
+    a sequence of 3d points was the idea that followed logically.</p>
+    <p>In order to create sequences of 3d points, we used drum loops
+    of length 4 bars, in 4/4, which represents 64 sixteenth notes. We
+    count in sixteenth notes because it is the most common way to structure
+    rythms in traditional european music. All the loops used were recorded
+    at 120 bpm.</p>
+    <p>Thus, as we associate each stroke to one sixteenth note, the loops
+    we will study are sequences of 64 points in 3 dimensions.</p>
+    <h2>Usual structure of a drum loop</h2>
+    <p>There is a structure that is generally implicit inside a drum loop.
+    Usually, the first and third bars are very similar, the end of the second
+    bar is a small break and the end of the forth bar is a bigger break.</p>
+    <p>I tried to take advantage of this structure by building a hierarchical
+    neural network, that can understand the loop on different levels:</p>
+    <ul>
+      <li>Loop level</li>
+      <li>Bar level</li>
+      <li>Quarter note level</li>
+      <li>Sixteenth note level</li>
+    </ul>
+    <p>I think that the best way to understand the network structure is to
+    read <a href="https://github.com/ValentinBilot/DrumLoopsGenerator">the code</a>.
+    Still I will try to explain it here.</p>
+
+
 
 
     </div>
