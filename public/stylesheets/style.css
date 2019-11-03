@@ -60,4 +60,9 @@ p {
 .mt-0 {
   font-size: 1.4em; }
 
+@media screen and (max-width: 1400px) {
+  .main {
+    margin-left: 0%;
+    margin-right: 0%; } }
+
 /*# sourceMappingURL=style.css.map */
