@@ -12,19 +12,38 @@ h1{
     padding-top:10px;
 }
 
+h2{
+  align-self:center;
+}
+
 a {
   color: #00B7FF;
 }
 
 .main{
     padding:20px;
-    padding-left:20%;
-    padding-right:20%;
+    margin-left:20%;
+    margin-right:20%;
     display:flex;
     flex-direction:column;
     height:100%;
     flex:auto;
-    align-items:center;
+    align-items:flex-start;
+    background-color: #fafafa;
+}
+
+.intro{
+  display:flex;
+  flex-direction:column;
+  flex:auto;
+  align-items:center;
+}
+
+
+.schema{
+  max-width: 500px;
+  margin:50px;
+  align-self:center;
 }
 
 .media{
@@ -33,7 +52,7 @@ a {
     margin:5px;
     box-shadow: 3px 5px 4px #888888;
 
-    
+
 }
 
 .card-body{
@@ -51,7 +70,7 @@ p{
 }
 
 .card-title{
-    font-size:1.5em;   
+    font-size:1.5em;
 }
 
 .mt-0{
