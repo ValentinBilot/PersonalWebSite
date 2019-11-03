@@ -8,7 +8,9 @@
     </br>
     </div>
     <div class="main">
+
     <h2>Intro</h2>
+
     <p>This project firstly was done in order to create one
        Variational Auto Encoder able to encode and generate drum sounds
        like snares, bass drums, hit hats, tambourines... and to generate
@@ -16,9 +18,38 @@
        a bass drum. Which we could imagine sounds like a
        "big bass snare drum", maybe :)
      </p>
+
     <h2>Global schema of the first Variational Auto-Encoder:</h2>
     <img class="schema" src="images/drum_loops_global_sheme.png">
+
+    <h2>Architectures of the Encoder and Decoder networks</h2>
+
+    <h3>Encoder</h3>
+    <p>As the spectrogram of a sound is an image, and as there is a lot of
+    bibliography about using convolutional neural networks (CNNs) on images,
+    I used that technique to reduce the dimension of the image.
+    Once the dimension reduced, I passed the smaller images into linear layers.
+    The output is made of two 3-dimensional points, one for the mean, and the
+    other for the standard deviation. From those two points we sample from a
+    normal distribution with the means and standard deviation previously obtained.
+    And then we have our encoded spectrogram in a 3-dimensional space.
+    </p>
+
+    <h3>Decoder</h3>
+    <p>The architecture of the decoder is very similar to the encoder.
+    First the 3d point goes throught linear layers in order to increase
+    the dimension, then the vector is split in small images, that will
+    flow in 2d CNNs, with layers of interpolation in order to increase the dimension
+    again, and to finaly reach the exact size of the input spectrogram of the Encoder.
+    </p>
+
+    <h3>Training</h3>
+    <p>The loss function is obtained by summing the mean square error between
+    the input and output spectrograms, and the KL-divergence between the distributions
+    of probability used to build the latent space and the standard normal distribution.</p>
+
     <h2>Sequences of 3d points</h2>
+
     <p>The intersting thing now, is that we have a way to reduce a drum
     sound, which is something a bit complicated, into a single 3d point,
     which is much simpler.
@@ -31,7 +62,9 @@
     at 120 bpm.</p>
     <p>Thus, as we associate each stroke to one sixteenth note, the loops
     we will study are sequences of 64 points in 3 dimensions.</p>
+
     <h2>Usual structure of a drum loop</h2>
+
     <p>There is a structure that is generally implicit inside a drum loop.
     Usually, the first and third bars are very similar, the end of the second
     bar is a small break and the end of the forth bar is a bigger break.</p>
