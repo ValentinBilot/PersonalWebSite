@@ -11,12 +11,20 @@
 
     <h2>Intro</h2>
 
+    <p>Some parts of this project are a bit technical, some knowledge about
+    neural networks, Convolutional Neural Networks (CNNs),
+    Recurent Neural Networks (RNNs), and Variational Auto-Encoders
+    <a href="https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf">
+      (VAEs)</a>
+    can be very usefull.</p>
+
     <p>This project firstly was done in order to create one
        Variational Auto Encoder able to encode and generate drum sounds
        like snares, bass drums, hit hats, tambourines... and to generate
        sounds between distinct elements, like something between a snare and
        a bass drum. Which we could imagine sounds like a
-       "big bass snare drum", maybe :)
+       "big bass snare drum". But it evolved into generating drum loops, because
+       the encoded information was then fun and easy to use with RNNs.
      </p>
 
     <h2>Global schema of the first Variational Auto-Encoder:</h2>
@@ -27,7 +35,7 @@
     <h3>Encoder</h3>
     <p>As the spectrogram of a sound is an image, and as there is a lot of
     bibliography about using convolutional neural networks (CNNs) on images,
-    I used that technique to reduce the dimension of the image.
+    I used this technique to reduce the dimension of the image.
     Once the dimension reduced, I passed the smaller images into linear layers.
     The output is made of two 3-dimensional points, one for the mean, and the
     other for the standard deviation. From those two points we sample from a
@@ -46,7 +54,8 @@
     <h3>Training</h3>
     <p>The loss function is obtained by summing the mean square error between
     the input and output spectrograms, and the KL-divergence between the distributions
-    of probability used to build the latent space and the standard normal distribution.</p>
+    of probability used to build the latent space and the standard normal distribution.
+    Optimisation of the parameters was done with ADAM.</p>
 
     <h2>Sequences of 3d points</h2>
 
