@@ -60,6 +60,10 @@ p {
 .mt-0 {
   font-size: 1.4em; }
 
+audio {
+  align-self: center;
+  width: 50%; }
+
 @media screen and (max-width: 1400px) {
   .main {
     margin-left: 0%;

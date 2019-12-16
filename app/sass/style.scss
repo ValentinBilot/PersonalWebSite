@@ -78,6 +78,11 @@ p{
     font-size:1.4em;
 }
 
+audio{
+    align-self:center;
+    width:50%;
+}
+
 @media screen and (max-width: 1400px)
 {
   .main{
@@ -85,3 +90,5 @@ p{
     margin-right: 0%;
   }
 }
+
+
